@@ -8,13 +8,30 @@
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/grid.css">
 </head>
-<body>
+<body>  
+    <!-- header is here -->
     <h1 class="hidden">Responsive Design</h1>
-    <header class="grid-con" id="main-header">
-        <nav class="box col-span-full m-col-start-4 m-col-end-13">Nav</nav>
-        <div class="box col-start-2 col-end-4 
-        m-col-start-1 m-col-end-3"
-        id="main-logo">Logo</div>
+    <div id="sticky-nav-con">
+        <header class="grid-con" id="main-header">
+            <nav id="main-nav" class="col-span-full m-col-start-4 m-col-end-11">
+                <h2 class="hidden">Main Navigation</h2>
+        <button id="button"></button>
+        <div id="burger-con">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="#">Merchandise</a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Contact Us</a></li>
+                <li><a href="#">Location</a></li>
+            </ul>
+        </div>
+    </nav>
+    <div id="logo" class="col-span-full m-col-start-1 m-col-end-4">
+        <!-- <img src="images/" alt=""> -->
+    </div>
+    <div id="sign-up-header" class="m-col-span-2 book-now">
+        <p>Sign Up</p>
+    </div>
     </header>
 
     <section class="grid-con" id="hero-con">
@@ -22,11 +39,11 @@
         <div class="box col-span-full">Hero Image</div>
     </section>
 
-    <section class="grid-con" id="Flavors-con">
-        <h2 class="hidden">Flavors</h2>
-        <div class="box col-start-2 col-end-4 m-col-start-6 m-col-end-8 l-col-span">Variety of Flavors</div>
+    <section class="grid-con" id="Our-products-con">
+        <h2 class="hidden">Our-products</h2>
+        <div class="box col-start-2 col-end-4 m-col-start-6 m-col-end-8 l-col-span">Our Products</div>
     </section>
-
+    <!-- products images goes here -->
     <section class="grid-con" id="products">
         <h2 class="hidden">Flavors</h2>
         <div id="Orange" class="box col-start-2 col-end-4 m-col-start-2 m-col-end-7 l-col-span-3">Product1</div>
@@ -38,25 +55,70 @@
     <section class="grid-con" id="button1">
         <h2 class="hidden">mark</h2>
         <div class="box col-start-2 col-end-4 m-col-start-6 m-col-end-8 l-col-start-6 l-col-end-8">
-            <button id="button">GOALS</button>
+            <button id="button">Explore More</button>
         </div>
     </section>
-    
-    <section class="grid-con" id="aboutus-con">
-        <h2 class="hidden">Promotional Info</h2>
-        <div class="box col-span-full">About Us</div>
-    </section>
-
-    <footer class="grid-con" id="footer-con">
-        <div class="box col-start-2 col-end-4 m-col-start-2 m-col-end-6 l-col-start-2 l-col-end-6" id="bio">Firstname</div>
-        <div class="box col-start-2 col-end-4 m-col-start-8 m-col-end-12 l-col-start-8 l-col-end-12" id="bio2">Lastname</div>
-        <div class="box col-start-2 col-end-4 m-col-start-2 m-col-end-6 l-col-start-2 l-col-end-6" id="area">Postal-code</div>
-        <div class= "box col-start-2 col-end-4  m-col-start-8 m-col-end-12 l-col-start-8 l-col-end-12" id="city">Address</div>
-        <div class="box col-start-2 col-end-4 m-col-start-5 m-col-end-8 l-col-start-6 l-col-end-8">
-            <button id="button2">SignUp</button>
+    <!-- about us  -->
+    <div class="grid-con">
+        <div id="about-us-text" class="col-span-full m-col-start-2 m-col-end-12 line-seperator">
+            <article id="about-us-text-column1">
+                <h2 class="hidden">About US</h2>
+                <p>The Story of Billy Beer</p>
+                <p>Named for one of our founders, Billy Dunn, BILLY BEER has been a crowd favorite since Uptown Brewing 
+                Company opened its doors. Some people think we are crazy for brewing a light beer and calling it exactly 
+                that. <br>Fair enough.</p> 
+                <p>We were well aware going in that this style is maligned by the craft community. But it’s 
+                our belief that craft isn’t exclusive to experimental recipes or adding basil and bacon to beers.<br>Craft should 
+                include brewing the most crushable styles and doing it better than the big guys.</p>
+                <p>Of course we love double IPAs, stouts, and sours, but we also love beers we can throw back on gameday or while we’re out fishing.</p>
+            </article>
+            <article id="about-us-text-column2">
+                <h2 class="hidden">Moreover</h2>
+                <p>So how did it begin? From the very start when Billy and his partners were planning the brewery, Billy had 
+                one condition: he wanted a beer that he and his friends could crush at football tailgates and on the golf 
+                course. He wanted a light beer that didn’t taste bad.<br>The brewmaster obliged and brewed a delicious craft
+                light lager. At first, we debated listing it on our menu due to the stigma surrounding light beers.</p>
+                <p>We considered making BILLY BEER an off-menu selection for those “in the know.” But immediately, 
+                people took to it and told us it was the best light beer they’d ever had.</p> We embraced the concept of our 
+                very own everyman’s beer and were proud to be doing it right. Now, we’re on a mission to bring the 
+                ultimate drinkable beer to North Carolina.<br>
+                This is America’s Light Craft Beer™.</p>
+            </article>
         </div>
-        <div class="box col-span-full" id="bottom">footer</div>
+    </div>
+<!-- Footer goes here -->
+    <footer id="footer-hero">
+        <div class="grid-con">
+            <section id="footer-contact-info" class="col-span-full m-col-start-2 m-col-end-5">
+                <h3>Billy Beer</h3>
+                <p>America’s Light Craft Beer<br>
+                    Founder- Billy Dunn</p>
+                <p>TERMS & CONDITIONS<br>
+                    PRIVACY POLICY<br>
+                    CONTACT US<br>
+                    COOKIE SETTINGS<br>
+                </p>
+            </section>
+            <nav id="footer-nav" class="col-span-full m-col-start-6 m-col-end-9 l-col-start-5 l-col-end-8">
+                <h2 class="hidden">Footer Nav</h2>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="#">Merchandise</a></li>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                    <li><a href="#">Location</a></li>
+                </ul>
+            </nav>
+            <div id="footer-book-now" class="col-span-full m-col-start-10 m-col-end-13 l-col-start-9 l-col-end-12 book-now">
+                <p>Purchase Now</p>
+            </div>
+            <div id="footer-privacy" class="col-span-full m-col-start-2 m-col-end-12 line-seperator">
+                <p id="privacy-policy">© 2022 Billy Beer. All rights reserved.</p>
+            </div>
+        </div>
     </footer>
+
+
     
     <script src="js/main.js"></script>
     
