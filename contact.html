@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Final Integrated Project</title>
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/grid.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Grechen+Fuemen&family=Lora&family=Margarine&display=swap" rel="stylesheet">
+</head>
+<body>
+    <h1 class="hidden">contact</h1>
+    <div id="sticky-nav-con">
+        <header class="grid-con" id="main-header">
+            <div id="logo" class="col-span-full m-col-span-2">
+              <img src="images/logo.svg" alt="billy beer logo">
+            </div>
+            <nav id="main-nav" class="col-span-full m-col-start-8">
+              <h2 class="hidden">Main Navigation</h2>
+              <label for="hamburger" id="burger">
+                <img src="images/burger.svg" alt="hamburger menu icon">
+              </label> 
+              <input type="checkbox" id="hamburger">
+              <div id="burger-con">
+                <ul id="nav-text">
+                  <li><a href="index.html">Home</a></li>
+                  <li><a href="#">Merchandise</a></li>
+                  <li><a href="#">About Us</a></li>
+                  <li><a href="contact.html">Contact Us</a></li>
+                  <li><a href="locations.html">Locations</a></li>
+                  <li><a href="#">Sign Up</a></li>
+                </ul>
+              </div> 
+            </nav> 
+          </header>
+    </div>
+
+    <main>
+        <section id="nearby-loc">
+            <h2 id="locations-h2">contact-us</h2>
+          </section>
+        <section id="contact-form-fields-right">
+            <h3 class="hidden">Contact Us Form</h3>
+            <form action="email.php" method="POST" enctype="text/plain">
+                <input name="firstName" type="text" placeholder="Firstname">
+                <input name="lastName" type="text" placeholder="Lastname">
+                <input name="contactInfo" type="text" required placeholder="Email">
+                <input name="contactInfo" type="text" required placeholder="Confirm Email">
+                <input name="contactInfo" type="text" required placeholder="Phone number">
+                <input name="address" type="text" placeholder="Address">
+                <input name="city" type="text" placeholder="City">
+                <input name="province" type="text" placeholder="Province">
+                <textarea name="msg" placeholder="Describe a bit...."></textarea>
+                <input name="submit" type="submit" value="Send">
+            </form>
+        </section>
+    </main>
+
+    <footer id="main-footer">
+        <section id="body_sec" class="grid">
+            <h2 id="footer-h2">ENJOY RESPONSIBLY. <br>
+            MUST BE LEGAL DRINKING AGE.</h2>
+            <nav id="footer-1">
+                <ul>
+                  <li><a href="index.html">Home</a></li>
+                  <li><a href="#">merchandise</a></li>
+                  <li><a href="#">about-us</a></li>
+                  <li><a href="contact.html">Contact-us</a></li>
+                  <li><a href="locations.html">locations</a></li>
+                </ul>
+            </nav>
+            <nav id="footer-2">
+                <ul>
+                  <li><a href="#">terms & <br>conditions </a></li>
+                  <li><a href="#">privacy policy</a></li>
+                  <li><a href="#">cookie settings</a></li>
+                </ul>
+            </nav>
+            <section id="logos">
+                <h2 class="hidden"> logos</h2>
+                <img src="images/Icon_awesome-facebook.svg" alt="facbook_icon" >
+                <img src="images/Icon_awesome-instagram.svg" alt="instagram_icon" >
+                <img src="images/Icon_feather-twitter.svg" alt="twitter_icon" >
+            </section>
+        </section>
+    </footer>   
+</body>
+</html>
